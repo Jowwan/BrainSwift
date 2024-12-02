@@ -1,0 +1,36 @@
+.temp-one {
+  margin-top: 2.5rem;
+}
+
+.temp-one-two {
+  margin-top: -2.5rem;
+}
+.hero-during-one {
+  grid-template-rows: 1fr;
+}
+.hero-during-one-box {
+  display: grid;
+  grid-template-columns: 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem;
+  grid-template-rows: 6.5rem 6.5rem 6.5rem 6.5rem 6.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 15rem;
+}
+
+.btn-number-one {
+  color: #0a3c6b;
+  font-size: 4rem;
+  padding: 0 2.36rem;
+  border-radius: 10px;
+  border: 0.2rem solid #0a3c6b;
+  transition: all 0.3s;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.btn-number-one:active,
+.btn-number-one:hover {
+  box-shadow: inset 0 -0.3rem 4.6rem -1.2rem #02264841;
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Enhance your cognitive skills with our engaging brain challenges and exercises. Our platform provides a comprehensive assessment of your mental abilities through fun and interactive games designed to stimulate your mind.">
+    <meta name="keywords" content="Reaction, speed, aim, aim trainer, brainswift, Brain Swift, Brainswift, memory test, iq test, cognitive test">
+    <meta name="author" content="Jovan Velinov"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" as="image" href="img/Hero-img.webp" >
+    <link rel="preload" as="style" href="styles/style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="scripts/script.js"></script>
+    <title>Brain Swift</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-list">
+          <a aria-label = "home-button" href ="#" class = "bsButton">Brain Swift</a>
+          <a aria-label = "dahsboard-button" href = "#" class = "pnButton">Dashboard</a>
+          <a aria-label = "account-button" href = "#" class = "acc acButton"><ion-icon name="person-circle-outline" class = "profile-icon"></ion-icon></a>
+        </div>
+    </header>
+    <section class="section-hero starts">
+      <div class="hero container">
+        <div class="hero-img-box">
+          <img alt = "brain swift logo"src="img/logo.png" class="hero-img" />
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title-start">Brain Swift</h1>
+          <p class="hero-text-start">
+            Assesses your cognitive ability through engaging brain challenges and exercises.
+          </p>
+        </div>
+        <div class="btn-hero-box">
+          <a aria-label = "get-started-button" href="#" class="btn-hero btn-hero-start btn-rea">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <section class="section-hero sec-hero-rea hidden b">
+      <div class="hero container hero-rea">
+        <div class="hero-img-box-rea">
+          <ion-icon class = "icon-games" name="flash-outline"></ion-icon>
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title-rea">Reaction Time</h1>
+          <p class="hero-text-rea">
+            When the red box turn green, click as quickly as you can.</br>Click anywhere to start
+          </p>
+        </div>
+      </div>
+      <div class = "win hero container hidden">
+        <div class="hero-img-box iconWin-box">
+          <ion-icon class = "icon-games iconWin"name="time-outline"></ion-icon>
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title time">222 ms</h1>
+          <p class="hero-text">
+            Click anywhere to keep going.
+          </p>
+        </div>
+      </div>
+      <div class = "early hero container hidden">
+        <div class="hero-text-box early-title">
+          <h1 class="hero-title">Too Early!</h1>
+          <p class="hero-text">
+            Click anywhere to try again.
+          </p>
+        </div>
+      </div>
+      <div class = "final hero container hidden">
+        <div class="hero-img-box-rea flex-col final-screen">
+          <ion-icon class = "icon-games" name="flash-outline"></ion-icon>
+          <p class = "avg hero-text">Avarage score</p>
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title finalMs">222 ms</h1>
+          <p class="hero-text hero-final">
+            Save your score to see how you compare.
+          </p>
+        </div>
+        <div class="btn-hero-box btn-final">
+          <a aria-label = "try-again-button" href="#" class="btn-hero-ta-rea btn-hero">Try Again</a>
+          <a aria-label = "saves-score-button" href="#" class="btn-hero-ss-rea btn-hero">Save Score</a>
+        </div>
+      </div>
+      <div class = "during hero container hidden">
+        <div class="hero-text-box early-title">
+          <h1 class="hero-title during-title">Wait for green...</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section-hero sec-hero-aim hidden b">
+      <div class = "blocker"><p>This game is made for larger screens.</p></div>
+      <div class="hero-aim container">
+        <p class = "rem hidden">Remaining  <span class ="num"> 30</span></p>
+        <ion-icon class = "icon-targ hidden" name="disc-outline"></ion-icon>
+        <div class="hero-text-box-aim">
+          <h1 class="hero-title-aim">Aim Trainer</h1>
+          <div class="hero-img-box-aim">
+            <ion-icon class = "icon-aim" name="disc-outline"></ion-icon>
+          </div>
+          <p class="hero-text-aim">
+            Hit 30 targets as quickly as you can.</br>Hit the target above to begin.
+          </p>
+        </div>
+      </div>
+      <div class = "final-aim hero container hidden">
+        <div class="hero-img-box-flex-col">
+          <ion-icon class = "icon-aim" name="disc-outline"></ion-icon>
+          <p class = "avg-hero-text-aim">Avarage score</p>
+        </div>
+        <div class="hero-text-box-final-aim">
+          <h1 class="hero-title-final-aim finalMs-aim">222 ms</h1>
+          <p class="hero-text-aim mg-ht">
+            Save your score to see how you compare.
+          </p>
+        </div>
+        <div class="btn-hero-box-aim">
+          <a aria-label = "try-again-button" href="#" class="btn-hero-aim-ta btn-hero">Try Again</a>
+          <a aria-label = "save-score-button" href="#" class="btn-hero-aim-ss btn-hero">Save Score</a>
+        </div>
+      </div>
+    </section>
+    <section class="section-hero sec-hero-verb hidden b">
+      <div class="hero container hero-verb">
+        <div class="hero-img-box-rea">
+          <ion-icon class = "icon-games" name="book-outline"></ion-icon>
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title-rea">Verbal Memory</h1>
+          <p class="hero-text-rea">
+            You will be shown words one at the time.</br>If you have seen a word during a test click SEEN, if it is a new word click NEW.</br>Click anywhere to start
+          </p>
+        </div>
+      </div>
+      <div class="hero container hero-verb-during hidden">
+        <div class = "verb-score-box">
+          <div class = "verb-lives"><p class = "verb-lives-text">Lives : </p> <p class ="verb-lives-number">5</p></div>
+          <div class = "verb-score"><p class = "verb-score-text">Score : </p> <p class ="verb-score-number">10</p></div>
+        </div>
+        <p class = "word-verb">crosscurrents</p>  
+        <div class = "btn-box-verb">
+          <a aria-label = "seen-button" class = "seen-btn" href = "#">SEEN</a>
+          <a aria-label = "new-button" class = "new-btn" href = "#">NEW</a>
+        </div>
+      </div>
+      <div class = "final final-verb hero container hidden">
+        <div class="hero-img-box-rea flex-col final-screen">
+          <ion-icon class = "icon-games" name="book-outline"></ion-icon>
+          <p class = "avg hero-text">Score</p>
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title finalMs verb-final">222 ms</h1>
+          <p class="hero-text hero-final">
+            Save your score to see how you compare.
+          </p>
+        </div>
+        <div class="btn-hero-box btn-final">
+          <a aria-label = "try-again-button" href="#" class="btn-hero-ta-rea btn-hero try-again-verb">Try Again</a>
+          <a aria-label = "save-score-button" href="#" class="btn-hero-ss-rea btn-hero save-score-verb">Save Score</a>
+        </div>
+      </div>
+    </section>
+    <section class ="section-hero sec-hero-num hidden b">
+      <div class="hero container hero-num">
+        <div class="hero-img-box-rea">
+          <ion-icon class = "icon-games" name="calculator-outline"></ion-icon>
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title-rea">Number Memory</h1>
+          <p class="hero-text-rea">
+            The avarage person can remember 7 numbers at the time. Can you do more?</br>Click anywhere to start
+          </p>
+        </div>
+      </div>
+      <div class="hero container hero-num-during hidden">
+        <div class = "num-dur">
+          <p class = "num-num">7123132532</p>
+          <div class="loader"></div>
+        </div>
+      </div>
+      <div class="hero container hero-num-guessing hidden"> 
+        <form class = "num-form">
+          <h1 class = "num-quest">What was the number?</h1>
+          <p class = "num-quest-p">Press enter to submit</p>
+          <input type = "text" pattern = "[0-9]*" class = "num-input">
+          <button class = "submit-btn-num" type = "submit">Submit</button>
+        </form>
+      </div>
+      <div class = "final final-num hero container hidden">
+        <div class="hero-img-box-rea flex-col final-screen">
+          <ion-icon class = "icon-games" name="calculator-outline"></ion-icon>
+          <p class = "avg hero-text">Score</p>
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title finalMs num-final">22</h1>
+          <p class="hero-text hero-final">
+            Save your score to see how you compare.
+          </p>
+        </div>
+        <div class="btn-hero-box btn-final">
+          <a aria-label = "try-again-button" href="#" class="btn-hero-ta-rea btn-hero try-again-num">Try Again</a>
+          <a aria-label = "save-score-button" href="#" class="btn-hero-ss-rea btn-hero save-score-num">Save Score</a>
+        </div>
+      </div>
+      
+    </section>
+    <section class ="section-hero sec-hero-one hidden b">
+      <div class="hero container hero-one">
+        <div class="hero-img-box-rea temp-one">
+          <ion-icon class = "icon-games" name="apps-outline"></ion-icon>
+        </div>
+        <div class="hero-text-box temp-one-two">
+          <h1 class="hero-title-rea">1 To 25</h1>
+          <p class="hero-text-rea">
+            Click the tiles from 1 to 25 as fast as possible!</br>Click anywhere to start
+          </p>
+        </div>
+      </div>
+      <div class = "hero container hero-during-one hidden">
+        <div class = "hero-during-one-box">
+          <button class = "btn-number-one">1</button> 
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">25</button>
+          <button class = "btn-number-one">1</button> 
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button> 
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button> 
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button> 
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+          <button class = "btn-number-one">1</button>
+        </div>
+      </div>
+      <div class = "final final-one hero container hidden">
+        <div class="hero-img-box-rea flex-col final-screen">
+          <ion-icon class = "icon-games" name="apps-outline"></ion-icon>
+          <p class = "avg hero-text">Score</p>
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title finalMs one-final">222 ms</h1>
+          <p class="hero-text hero-final">
+            Save your score to see how you compare.
+          </p>
+        </div>
+        <div class="btn-hero-box btn-final">
+          <a aria-label = "try-again-button" href="#" class="btn-hero-ta-rea btn-hero try-again-one">Try Again</a>
+          <a aria-label = "save-score-button" href="#" class="btn-hero-ss-rea btn-hero save-score-one">Save Score</a>
+        </div>
+      </div>
+    </section>
+    <section class ="section-hero sec-hero-seq hidden b">
+      <div class="hero container hero-seq">
+        <div class="hero-img-box-rea temp-one">
+          <ion-icon class = "icon-games" name="cube-outline"></ion-icon>
+        </div>
+        <div class="hero-text-box temp-one-two">
+          <h1 class="hero-title-rea">Sequence Test</h1>
+          <p class="hero-text-rea">
+            Memorize the given pattern.</br>Click anywhere to start
+          </p>
+        </div>
+      </div>
+      <div class = "hero container hero-during-seq hidden">
+        <div class = "seq-div"></div>
+        <div class = "seq-div"></div>
+        <div class = "seq-div"></div>
+        <div class = "seq-div"></div>
+        <div class = "seq-div"></div>
+        <div class = "seq-div"></div>
+        <div class = "seq-div"></div>
+        <div class = "seq-div"></div>
+        <div class = "seq-div"></div>
+      </div>
+      <div class = "final final-seq hero container hidden">
+        <div class="hero-img-box-rea flex-col final-screen">
+          <ion-icon class = "icon-games" name="apps-outline"></ion-icon>
+          <p class = "avg hero-text">Score</p>
+        </div>
+        <div class="hero-text-box">
+          <h1 class="hero-title finalMs seq-final">222 ms</h1>
+          <p class="hero-text hero-final">
+            Save your score to see how you compare.
+          </p>
+        </div>
+        <div class="btn-hero-box btn-final">
+          <a aria-label = "try-again-button" href="#" class="btn-hero-ta-rea btn-hero try-again-seq">Try Again</a>
+          <a aria-label = "save-score-button" href="#" class="btn-hero-ss-rea btn-hero save-score-seq">Save Score</a>
+        </div>
+      </div>
+    </section>
+    <section class = "account-page hero hidden b">
+      <p class = "stats-hed">Statistics</p>
+      <div class = "stats-cont-cont">
+        <div class = "stats-cont"><p class = "stats-cont-text">Reaction Time</p><div class = "stats-cont-min"><p class = "grade gradeReac">-</p><p class ="ms-grade ms-reac-grade">-</p></div></div>
+        <div class = "stats-cont"><p class = "stats-cont-text">Aim Trainer</p><div class = "stats-cont-min"><p class = "grade gradeAim">-</p><p class ="ms-grade ms-aim-grade">-</p></div></div>
+        <div class = "stats-cont"><p class = "stats-cont-text">1 To 25</p><div class = "stats-cont-min"><p class = "grade gradeOne">-</p><p class ="ms-grade ms-one-grade">-</p></div></div>
+        <div class = "stats-cont"><p class = "stats-cont-text">Sequence Test</p><div class = "stats-cont-min"><p class = "grade gradeSeq">-</p><p class ="ms-grade ms-seq-grade">-</p></div></div>
+        <div class = "stats-cont"><p class = "stats-cont-text">Verbal Memory</p><div class = "stats-cont-min"><p class = "grade gradeVerb">-</p><p class ="ms-grade ms-verb-grade">-</p></div></div>
+        <div class = "stats-cont"><p class = "stats-cont-text">Number Memory</p><div class = "stats-cont-min"><p class = "grade gradeNum">-</p><p class ="ms-grade ms-num-grade">-</p></div></div>
+      </div>
+    </section>
+    <div class ="fill hidden">
+    </div>
+    <section class="section-panels">
+      <div class="panels grid">
+        <a aria-label = "flash-button" class = "al btn-rea" href = "#">
+          <div class="panel" >
+            <p class="panel-icon">
+              <ion-icon class="icon" name="flash-outline"></ion-icon>
+            </p>
+            <h1 class="panel-title">Reaction Time</h1>
+            <p class="panel-desc">Test your visual reflexes</p>
+          </div>
+        </a>
+        <a aria-label = "aim-button" class = "al btn-aim" href = "#">
+          <div class="panel">
+            <p class="panel-icon">
+              <ion-icon class="icon" name="disc-outline"></ion-icon>
+            </p>
+            <h1 class="panel-title">Aim Trainer</h1>
+            <p class="panel-desc">How quickly can you </br>hit all targets?</p>
+          </div>
+        </a>
+        <div class="panel btn-one">
+          <p class="panel-icon">
+            <ion-icon class="icon" name="apps-outline"></ion-icon>
+          </p>
+          <h1 class="panel-title">1 To 25</h1>
+          <p class="panel-desc">Click the numbers from</br>1 to 25 as fast as possible!</p>
+        </div> 
+        <div class="panel btn-seq">
+          <p class="panel-icon">
+            <ion-icon class="icon" name="cube-outline"></ion-icon>
+          </p>
+          <h1 class="panel-title">Sequence Test</h1>
+          <p class="panel-desc">Remember and repeat the expanding sequence</p>
+        </div>
+        <div class="panel btn-verb">
+          <p class="panel-icon">
+            <ion-icon class="icon" name="book-outline"></ion-icon>
+          </p>
+          <h1 class="panel-title">Verbal Memory</h1>
+          <p class="panel-desc">Keep as many words in </br>short term memory</p>
+        </div>
+        <div class="panel btn-num">
+          <p class="panel-icon">
+            <ion-icon class="icon" name="calculator-outline"></ion-icon>
+          </p>
+          <h1 class="panel-title">Number Memory</h1>
+          <p class="panel-desc">Remember the longest </br>number you can</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Jowwan" target="_blank">
+            <ion-icon class = "logoo"name="logo-github"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/jovanw_/" target="_blank">
+            <ion-icon class = "logoo"name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <p>&copy;2024 Brain Swift | All Rights Reserved</p>
+    </footer>
+    <link rel="stylesheet" href="styles/styleReac.css" />
+    <link rel="stylesheet" href="styles/styleAim.css" />
+    <link rel="stylesheet" href="styles/styleVerb.css" />
+    <link rel="stylesheet" href="styles/styleNum.css" />
+    <link rel="stylesheet" href="styles/styleOne.css" />
+    <link rel="stylesheet" href="styles/styleSeq.css" />
+    <link rel="stylesheet" href="styles/styleAcc.css" />
+    <link rel="stylesheet" href="styles/stylePhone.css" />
+    <script async src="scripts/scriptReac.js"></script>
+    <script async src="scripts/scriptAim.js"></script>
+    <script async src="scripts/scriptVerb.js"></script>
+    <script async src="scripts/scriptNum.js"></script>
+    <script async src="scripts/scriptOne.js"></script>
+    <script async src="scripts/scriptSeq.js"></script>
+    <script async src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js" integrity="sha384-UdJHYJK9eDBy7vML0TvJGlCpvrJhCuOPGTc7tHbA+jHEgCgjWpPbmMvmd/2bzdXU" crossorigin="anonymous"></script>
+    <script async
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script async
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

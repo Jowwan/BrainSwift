@@ -1,0 +1,45 @@
+.account-page {
+  background-image: url(../img/Hero-img.webp);
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.stats-hed {
+  font-size: 8rem;
+  margin-top: -3.5rem;
+  font-weight: 500;
+}
+
+.stats-cont-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stats-cont {
+  display: flex;
+  align-items: center;
+  width: 95rem;
+  justify-content: space-between;
+}
+
+.stats-cont-text {
+  font-size: 5rem;
+  font-weight: 450;
+}
+
+.grade {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.stats-cont-min {
+  display: flex;
+  width: 29rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ms-grade {
+  font-size: 5rem;
+}

@@ -1,0 +1,81 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 20rem;
+  height: 1rem;
+  border-radius: 5px;
+  background: linear-gradient(#0a3c6b 0 0) 0/0% no-repeat lightblue;
+  animation: l2 2s infinite steps(100);
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes l2 {
+  100% {
+    background-size: 110%;
+  }
+}
+
+.num-num {
+  color: white;
+  font-size: 13rem;
+  text-align: center;
+}
+
+.num-dur {
+  margin-top: 20rem;
+}
+
+.num-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.num-quest {
+  color: white;
+  font-size: 7.5rem;
+  margin-top: 11rem;
+  text-align: center;
+}
+
+.num-quest-p {
+  color: lightblue;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: -2.7rem;
+  margin-bottom: 5rem;
+}
+
+.num-input {
+  width: 60rem;
+  height: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 5.5rem;
+  color: #0a3c6b;
+  border-radius: 10px;
+  border-color: transparent;
+  text-align: center;
+}
+
+.submit-btn-num {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.5s;
+  border: 0.2rem solid #0a3c6b;
+  background-color: #308fb2;
+  width: 20rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+}
+.submit-btn-num:hover,
+.submit-btn-num:active {
+  box-shadow: inset 0 -0.3rem 4.6rem -1.2rem #0226489a;
+  background-color: #49a9cc;
+}

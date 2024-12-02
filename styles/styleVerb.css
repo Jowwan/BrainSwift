@@ -1,0 +1,72 @@
+.verb-score-box {
+  margin-top: 12rem;
+  display: flex;
+  gap: 6rem;
+  font-size: 12rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.verb-lives {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.verb-lives-text,
+.verb-lives-number,
+.verb-score-text,
+.verb-score-number {
+  color: #d7ecf4;
+}
+
+.verb-score {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.verb-game {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.word-verb {
+  font-size: 11rem;
+}
+
+.new-btn:link,
+.new-btn:visited {
+  font-size: 3.5rem;
+  text-decoration: none;
+  padding: 1rem 2.2rem;
+  border-radius: 20px;
+  background-color: #205f77;
+  color: #e6e6e6;
+  transition: all 0.5s;
+}
+
+.new-btn:hover,
+.new-btn:active {
+  background-color: #308fb2;
+}
+
+.seen-btn:link,
+.seen-btn:visited {
+  font-size: 3.5rem;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  background-color: #e6e6e6;
+  color: #205f77;
+  transition: all 0.5s;
+  margin-right: 10rem;
+}
+
+.seen-btn:hover,
+.seen-verb:active {
+  background-color: #cccccc;
+}
+
+.hero-verb-during {
+  grid-template-rows: 25rem 27rem;
+  justify-content: center;
+}

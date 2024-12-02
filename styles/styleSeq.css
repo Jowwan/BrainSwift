@@ -1,0 +1,28 @@
+.hero-during-seq {
+  display: grid;
+  grid-template-columns: 18rem 18rem 18rem;
+  grid-template-rows: 18rem 18rem 18rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 9rem;
+}
+
+.seq-div {
+  background-color: #e6e6e6;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.seq-div:active {
+  background-color: #2a7f9e;
+}
+
+.seq-div-active {
+  background-color: #2a7f9e;
+}
+
+.hidden {
+  display: none;
+}

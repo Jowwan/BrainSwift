@@ -1,0 +1,116 @@
+.hero-img-box-rea {
+  height: 28rem;
+  width: 28rem;
+  display: flex;
+}
+.icon-games {
+  font-size: 20rem;
+  margin: 0 auto;
+  align-self: center;
+  justify-self: center;
+  color: white;
+}
+.hero-title-rea {
+  font-size: 8rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+.hero-text-rea {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.btn-hero-box {
+  display: flex;
+  gap: 4rem;
+}
+
+.btn-hero-ss-rea:link,
+.btn-hero-ss-rea:visited {
+  background-color: #205f77;
+  color: #e6e6e6;
+  transition: all 0.5s;
+}
+
+.btn-hero-ss-rea:active,
+.btn-hero-ss-rea:hover {
+  background-color: #308fb2;
+  box-shadow: inset 0 -0.3rem 4.6rem -1.2rem #0226489a;
+}
+
+.btn-hero-ta-rea:link,
+.btn-hero-ta-rea:visited {
+  background-color: #e6e6e6;
+  color: #205f77;
+  transition: all 0.5s;
+}
+
+.btn-hero-ta-rea:active,
+.btn-hero-ta-rea:hover {
+  background-color: #cccccc;
+  box-shadow: inset 0 -0.3rem 4.6rem -1.2rem #0226489a;
+}
+
+.fill {
+  width: 100%;
+  height: 7.7rem;
+  background-color: #e6e6e6;
+}
+
+.hidden {
+  display: none;
+}
+
+.iconWin {
+  font-size: 13rem;
+  margin-top: 3.7rem;
+}
+
+.iconWin-box {
+  width: auto;
+  height: auto;
+  margin-bottom: -3rem;
+  margin-top: 10rem;
+}
+
+.time {
+  margin-top: 4rem;
+  font-size: 9.5rem;
+}
+
+.early-title {
+  margin-top: 27rem;
+}
+
+.avg {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  align-self: center;
+  justify-self: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.final-screen {
+  margin-top: 6rem;
+}
+
+.finalMs {
+  font-size: 9.5rem;
+  margin-top: -3rem;
+}
+
+.hero-final {
+  margin-bottom: 0 !important;
+  margin-top: 2.5rem;
+}
+
+.final {
+  grid-template-rows: 36rem 20rem 1fr 1fr;
+}
+
+.hidden {
+  display: none;
+}
